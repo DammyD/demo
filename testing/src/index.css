@@ -1,0 +1,41 @@
+:root {
+  --light-color: #fffffa;
+  --orange-color: #ff7200;
+  --teal-color: #01847f;
+  --dark-color: #021718;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: var(--dark-color);
+}
+
+.wrapper {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+@media (min-width: 1300px) {
+  .wrapper {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 32px;
+  }
+}
